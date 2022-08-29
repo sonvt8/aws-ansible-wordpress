@@ -1,0 +1,15 @@
+# OS.
+.DS_Store
+
+# Vagrant.
+.vagrant/
+
+# Ansible.
+*.retry
+
+# Terraform
+*.terraform/
+terraform.tfstate*
+
+# SSH keys
+*ssh/keys/
