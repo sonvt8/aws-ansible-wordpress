@@ -1,0 +1,23 @@
+---
+- name: Install mysql server
+  hosts: db
+  become: true
+  become_user: root
+
+  vars:
+    db_volume_name: mysql_server
+
+  tasks:
+    - name: Run mysql server container
+      docker_container:
+        image: mysql
+        name: mysql_server
+        volumes:
+          - "{{ db_volume_name }}:/var/lib/mysql"
+        ports:
+          - "3306:3306"
+        env:
+          MYSQL_ROOT_PASSWORD: a-secure-password
+          MYSQL_PASSWORD: another-secure-password
+          MYSQL_DATABASE: wordpress
+          MYSQL_USER: wordpress

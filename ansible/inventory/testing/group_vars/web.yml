@@ -1,0 +1,7 @@
+---
+wordpress_volume_name: wordpress
+
+mysql_host: "testing-mysql.cmo3pywaugj9.ap-southeast-1.rds.amazonaws.com:3306"
+mysql_user: wp
+mysql_db_name: wp
+mysql_password: "DY6XvqH3nTUYUHba"

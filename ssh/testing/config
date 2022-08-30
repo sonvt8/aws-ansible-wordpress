@@ -1,0 +1,9 @@
+Host *
+  User ubuntu
+  IdentityFile ~/Devops/AWS/Terraform/init-final-project/ssh/keys/devops.pem
+
+Host web-za-01
+  HostName 13.212.59.209
+
+Host web-zb-01
+  HostName 54.169.69.184
