@@ -40,13 +40,13 @@ module "alb" {
           target_id = element(values(module.ec2_zb)[*].id, 0)
           port      = 80
         }
-        #   web-za-02 = {
-        #     target_id = element(values(module.ec2_za)[*].id, 1)
-        #   }
-        #   web-zb-02 = {
-        #     target_id = element(values(module.ec2_zb)[*].id, 1)
-        #     port      = 80
-        #   }
+        web-za-02 = {
+          target_id = element(values(module.ec2_za)[*].id, 1)
+        }
+        web-zb-02 = {
+          target_id = element(values(module.ec2_zb)[*].id, 1)
+          port      = 80
+        }
       }
     }
   ]
