@@ -7,3 +7,9 @@ Host web-za-01
 
 Host web-zb-01
   HostName 54.169.69.184
+
+Host web-za-02
+  HostName 54.255.193.38
+
+Host web-zb-02
+  HostName 18.142.254.69
