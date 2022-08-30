@@ -27,7 +27,7 @@ module "ec2_za" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"
 
-  for_each = toset(["01"])
+  for_each = toset(["01","02"])
 
   name = "${var.env}-web-za-${each.key}"
 
@@ -48,7 +48,7 @@ module "ec2_zb" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"
 
-  for_each = toset(["01"])
+  for_each = toset(["01","02"])
 
   name = "${var.env}-web-zb-${each.key}"
 
